@@ -1,6 +1,6 @@
 body { 
-    background-color: red;
-    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
 }
 
 .cabecalho{
@@ -17,14 +17,35 @@ body {
 }
 
 #titulo {
-
+    justify-content: center; /* Centraliza na horizontal */
+  align-items: center;
+    font-size: 50px;
 }
 
 p {
+    font-size: 25px;
+    padding: 20px;
+    height: 10vh; /* Ocupa 100% da altura da tela */
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Centraliza na horizontal */
+  align-items: center;     /* Centraliza na vertical */
     
+     
 }
 
 .imgcentro {
+    padding-top: 30px;
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* ou de forma abreviada: margin: 0 auto; */
+
+
+  width: 250px;           /* Largura fixa do contêiner */
+  height: px;          /* Altura fixa do contêiner */
+  overflow: hidden;       /* Esconde o que passar do limite */
 
 }
 
@@ -34,11 +55,17 @@ ul{
 }
 
 li{
-    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+
    
 }
 
 li a{
+    text-decoration: none;
+    color: black;
     font-size: 50px;
 
 }
@@ -51,8 +78,18 @@ button{
 footer{
      position: fixed;
      bottom: 0;
-     background-color: yellow;
+     background-color: rgb(174, 245, 93);
      font-size: 30px;
      width: 100%;
      text-align: center;
+}
+
+.voltar {
+    font-size: 20px;
+    color: white !important;
+   
+}
+
+.segundoMenu{
+    font-size: 2px;
 }
